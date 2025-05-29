@@ -1,70 +1,111 @@
-header, footer{
-    color: aliceblue;
-    background-color: black;
-    text-align: center;
-
-    
+/* Colores generales */
+:root {
+    --verde1: rgb(48, 200, 48);
+    --verde2: #009975;
+    --texto-claro: #f0f0f0;
+    --gris-fondo: #8c8c8c;
+    --gris-suave: #c3c3c3;
 }
-body, header, footer, #nombrePag{
+
+/* Reset básico */
+body, header, footer, #nombrePag {
     margin: 0;
     padding: 0;
 }
 
-footer li {
-    float: left;
-    margin: 50px;
-    font-size: 15px;
-    color: gray;
+/* Body */
+body {
+    background-color: var(--gris-fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--texto-claro);
 }
 
-ul{
+/* Header y Footer */
+header, footer {
+    color: var(--texto-claro);
+    background: linear-gradient(to left, var(--verde1), var(--verde2));
+    text-align: center;
+    padding: 1.5vh 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Listas del menú */
+header ul, footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
-    font-family: Verdana;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    background: inherit;
 }
 
-header li{
-    float:left;
-    border-right: 1px solid white;
+header li, footer li {
+    font-size: 16px;
+    color: var(--texto-claro);
 }
 
+header li {
+    padding: 1vh 2vh;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header li:last-child {
+    border-right: none;
+}
+
+/* Hover */
 header li:hover {
-    background-color: aquamarine;
+    background-color: rgba(14, 200, 73, 0.7);
+    transition: background-color 0.3s;
 }
 
-li a{
+/* Enlaces de menú */
+#menu li a {
     display: block;
-    color: white;
-    padding: 10px 77.9px;
+    color: var(--gris-suave);
+    padding: 1vh 4vh;
     text-decoration: none;
 }
 
+/* Título de la página */
 #nombrePag {
     text-align: center;
-    font-family: fantasy;
-    color: goldenrod;
-    font-size: 90px;
+    font-family: 'Georgia', serif;
+    color: var(--gris-suave);
+    font-size: 64px;
+    margin: 3vh 0;
 }
 
-body {
-    background-color: rgb(97, 97, 97);
+/* Secciones */
+section {
+    background-color: var(--gris-fondo);
+    margin: 2vh 4vh;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.tabla tr td{
-   border: 1px solid black;
-   padding: 10px;
-   text-align: center;
-   height: 77px;
-   width: 50%;
+/* Títulos y línea decorativa */
+#CV h1 {
+    color: var(--verde1);
+    font-size: 28px;
+    margin: 1vh 0 1vh 1vh;
+    border-bottom: 2px solid var(--gris-suave);
+    display: inline-block;
+    padding-bottom: 0.5vh;
 }
 
+/* hr si se usa */
+hr {
+    border: none;
+    border-top: 3px solid var(--gris-suave);
+    margin: 1vh 4vh;
+}
 
-
-
-
-
-
-
+/* Lista de contenido */
+#CV li {
+    font-size: 18px;
+    margin-bottom: 1vh;
+}
