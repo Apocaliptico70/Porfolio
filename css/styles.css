@@ -1,0 +1,70 @@
+header, footer{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+
+    
+}
+body, header, footer, #nombrePag{
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    float: left;
+    margin: 50px;
+    font-size: 15px;
+    color: gray;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: Verdana;
+}
+
+header li{
+    float:left;
+    border-right: 1px solid white;
+}
+
+header li:hover {
+    background-color: aquamarine;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 10px 77.9px;
+    text-decoration: none;
+}
+
+#nombrePag {
+    text-align: center;
+    font-family: fantasy;
+    color: goldenrod;
+    font-size: 90px;
+}
+
+body {
+    background-color: rgb(97, 97, 97);
+}
+
+.tabla tr td{
+   border: 1px solid black;
+   padding: 10px;
+   text-align: center;
+   height: 77px;
+   width: 50%;
+}
+
+
+
+
+
+
+
+
