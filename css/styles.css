@@ -98,7 +98,7 @@ hr {
 }
 
 /* Estilo para el <select> dentro del menú */
-#proyectos {
+#proyectos, .enlaces {
     background-color: #0B0B0B;
     color: #D4AF37; 
     font-size: 16px;
@@ -111,9 +111,24 @@ hr {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+table caption {
+    position: relative;
+    left: 14vh;
+    font-size: 40px;
+}
+
+table th {
+    font-size: 30px;
+}
+
+.enlaces {
+    position: relative;
+    left: 40%;
+  }
 /*Evento de cursor al ejecutar el select*/
 #proyectos:hover,
-#proyectos:focus {
+#proyectos:focus,
+.enlaces:hover {
     background-color: rgba(212, 175, 55, 0.15);
     border-color: #D4AF37;
     color: #D4AF37;
