@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorion</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="nombrePag">Proyectos</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <select name="proyectos" id="proyectos" onchange="location = this.value;">
+                    <option value="">Selecciona un proyecto</option>
+                    <option value="P01 Memorion.html">P01 Memorion</option>
+                    <option value="P02 CalcuRedes.html">P02 CalcuRedes</option>
+                    <option value="P03 AppMaps.html">P03 AppMaps</option>
+                    <option value="P04 Velneo.html">P04 Velneo</option>
+                </select>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Descripción</h1>
+        <p>
+            Memorión es un juego de memoria clásico que consiste en encontrar pares de cartas iguales 
+            entre un conjunto de cartas colocadas boca abajo.
+        </p>
+        <h2>¿Como se juega?</h2>
+        <ol>
+            <li>Se disponen varias cartas (normalmente en una cuadrícula) con las imágenes ocultas.</li>
+            <li>En cada turno, el jugador da la vuelta a dos cartas.</li>
+            <li>Si las cartas coinciden, se quedan descubiertas.</li>
+            <li>Si no coinciden, se vuelven a girar boca abajo.</li>
+            <li>El objetivo es recordar la posición de las cartas para encontrar todas las parejas en el menor número de intentos o en el menor tiempo posible.</li>
+        </ol>
+        <p>Es ideal para mejorar la memoria visual, la concentración y la atención. </p>
+        
+    </section>
+    <section>
+        <div class="bloques">
+            <h1>Interfaz</h1>
+            <img  class="img-bloque" src="../img/P01 Memorion/interfaz.png" alt="Imagen P01 Memorion">
+        </div>
+
+        <div class="bloques">
+            <h1>Tablero</h1>
+            <img class="img-bloque" src="../img/P01 Memorion/tablero.png" alt="Imagen P01 Memorion">
+
+        </div>
+    </section>
+
+    <section>
+        <button class="enlaces" onclick="window.open('https://apocaliptico70.github.io/ProyectoMemorion/', '_blank')"><img src="../img/gamepad_PNG28-3936153647.png" alt="" style="height: 20px; width: 20px;"> Juego</button>
+        <button class="enlaces" onclick="window.open('https://github.com/Apocaliptico70/ProyectoMemorion.git')"><img src="../img/github_PNG63-2011231569.png" alt="Logo GitHub" style="height: 20px; width: 20px;">GitHub</button>
+    </section>
+
+    <footer>
+        <ul>
+            <li>Correo: victor.ferpri.1@educa.jcyl.es</li>
+            <li>Telefono: (+34) 689 432 233</li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
