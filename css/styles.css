@@ -5,7 +5,6 @@ body {
     margin: 0;
 }
 
-/* Header y Footer */
 header, footer {
     color: #D4AF37;
     background: linear-gradient(to left, #0B0B0B, #2C2C2C);
@@ -14,7 +13,6 @@ header, footer {
     box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
 }
 
-/* Listas en Header y Footer */
 header ul, footer ul {
     list-style: none;
     margin: 0;
@@ -26,7 +24,6 @@ header ul, footer ul {
     overflow: hidden;
 }
 
-/* Elementos de lista en Header y Footer */
 header li, footer li {
     font-size: 16px;
     color: #D4AF37;
@@ -45,7 +42,6 @@ header li:hover {
     transition: background-color 0.3s;
 }
 
-/* Enlaces dentro del menú */
 #menu li a {
     display: block;
     color: #D4AF37;
@@ -53,7 +49,6 @@ header li:hover {
     text-decoration: none;
 }
 
-/* Título principal */
 #nombrePag {
     text-align: center;
     font-family: 'Georgia', serif;
@@ -63,7 +58,6 @@ header li:hover {
     text-shadow: 1px 1px 3px rgba(212, 175, 55, 0.6);
 }
 
-/* Secciones principales */
 section {
     background-color: #0B0B0B;
     margin: 2vh 4vh;
@@ -73,7 +67,6 @@ section {
     color: #E6D9B8; 
 }
 
-/* Encabezados en CVEnglish, CVSpanish */
 #CVEnglish h1, #CVSpanish h1 {
     color: #D4AF37;
     font-size: 28px;
@@ -83,21 +76,12 @@ section {
     padding-bottom: 0.5vh;
 }
 
-/* Línea horizontal */
-hr {
-    border: none;
-    border-top: 3px solid #A3862D;
-    margin: 1vh 4vh;
-}
-
-/* Listas dentro de CV */
 #CVEnglish li, #CVSpanish li {
     font-size: 18px;
     margin-bottom: 1vh;
     color: #E6D9B8;
 }
 
-/* Estilo para el <select> dentro del menú */
 #proyectos, .enlaces {
     background-color: #0B0B0B;
     color: #D4AF37; 
@@ -111,21 +95,11 @@ hr {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-table caption {
-    position: relative;
-    left: 14vh;
-    font-size: 40px;
-}
-
-table th {
-    font-size: 30px;
-}
-
 .enlaces {
     position: relative;
     left: 40%;
   }
-/*Evento de cursor al ejecutar el select*/
+
 #proyectos:hover,
 #proyectos:focus,
 .enlaces:hover {
@@ -178,6 +152,17 @@ header li select {
     gap: 24px;
     justify-content: left;
     margin-top: 20px;
+}
+
+.img-Velneo{
+    width: 400px;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 8px;
+    border: 1px solid goldenrod;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #111;
 }
  
 .img-bloque{
