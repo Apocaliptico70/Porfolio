@@ -18,6 +18,7 @@ header ul, footer ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2vh;
     background: inherit;
@@ -98,7 +99,7 @@ section {
 .enlaces {
     position: relative;
     left: 40%;
-  }
+}
 
 #proyectos:hover,
 #proyectos:focus,
@@ -147,17 +148,19 @@ header li select {
     outline: none;
 }
 
-.bloques{
+.bloques {
     display: flex;
     gap: 24px;
-    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.img-Velneo{
-    width: 400px;
-    height: 200px;
-    object-fit:cover;
+.img-Velneo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
     border: 1px solid goldenrod;
     margin-top: 20px;
@@ -165,9 +168,10 @@ header li select {
     background: #111;
 }
  
-.img-bloque{
-    width: 200px;
-    height: 200px;
+.img-bloque {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid goldenrod;
@@ -177,5 +181,54 @@ header li select {
 }
 
 .bloques h1 {
-    margin-top: 100px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*para pantallas inferiores a 768px*/
+@media screen and (max-width: 768px) {
+    #nombrePag {
+        font-size: 36px;
+        margin: 2vh 0;
+    }
+
+    header ul, footer ul {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    header li, footer li {
+        justify-content: center;
+        border-right: none;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .enlaces {
+        left: 0;
+        margin: 1rem auto;
+        display: block;
+        text-align: center;
+    }
+
+    #Idiomas {
+        position: static;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    section {
+        margin: 2vh 2vw;
+        padding: 4vw;
+    }
+
+    .bloques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-Velneo,
+    .img-bloque {
+        max-width: 90%;
+        height: auto;
+    }
 }
